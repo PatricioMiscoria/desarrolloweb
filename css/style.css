@@ -1,0 +1,275 @@
+
+/*#padre{
+    
+    display: grid;
+    grid-template-areas:  "header header header"
+                          "menu menu menu"
+              
+                          "asideizquierdo productos asidederecho"
+                
+                          "footer footer footer";
+    grid-template-rows: auto auto auto auto; /* FILAS 1° Header 2°AsideIzquierod 3°Section 4°footer*/
+   /* grid-template-columns: 20% auto 20%; /* COLUMNAS */
+   /* grid-column-gap: 10px;
+    grid-row-gap: 10px;
+ } */
+
+.contenedor{
+    min-height: auto;
+    min-width: auto;
+}
+
+
+ body{
+     /*background-color: yellow; */
+     font-family: 'Secular One', sans-serif;
+ }
+
+
+/*Clases de los contenedores*/
+ .claseHeader{
+    /*border: solid 2px black;*/
+}
+.claseNav{
+   /* border: solid 2px black;  */
+}
+
+.claseAside1{
+    border: solid 2px black;
+    background: #55fd5d;
+	color: rgb(0, 0, 0);
+	display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+.claseAside2{
+    border: solid 2px black;
+    background: #55a8fd;
+	color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+.claseSection{
+    border: solid 2px black;
+}
+.claseFooter{
+    border: solid 2px black;
+}
+
+
+
+header{
+    grid-area: header; 
+    /*background-color: blue;*/
+}
+
+footer{
+    grid-area: footer;
+}
+
+section{
+    grid-area: productos;
+}
+
+
+nav{
+    grid-area: menu;
+   
+}
+
+
+
+.posicionlogo{
+    display: flex;
+    justify-content: center;
+}
+
+.estiloLogo{
+    max-width: 30%;
+    max-height: 30%;
+}
+
+.posicionfoto1{
+   display: flex;
+    justify-content: center;    
+}
+
+.estilofoto1{
+   max-width: 100%;
+    max-height: 100%;
+}
+
+.posicionfoto2{
+    display: flex;
+     justify-content: center;    
+ }
+ 
+ .estilofoto2{
+    max-width: 100%;
+     max-height: 100%;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para el footer html inicio*/
+.footerestiloinicio{
+    background-color: rgba(7, 224, 224, 0.534);
+    border-radius: 30px;
+    text-align: center;
+    font-size: 200%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%; 
+ 
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+
+
+/*  CELULAR: */
+/*  CELULAR: */
+/*  CELULAR: */
+/*  CELULAR: */
+@media only screen and (min-width: 319px) {
+    body{
+        background-color: rgb(255, 0, 0);
+    }
+
+    #botones{
+        background-color: rgb(202, 224, 7);
+        border-radius: 30px;  
+        padding-top: 0.5%;
+        padding-bottom: 25%;  
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+        justify-content: center;
+
+        }
+
+         /* Estilo de texto de los botones en CELULAR*/
+    .btn1, .btn2, .btn3, .btn4, .btn5, .btn6{
+        font-size: 150%;
+        font-weight: bold;
+
+        border-radius: 30px;
+       /*line-height: 250%;
+       /* text-align: center;
+        /*vertical-align: middle;*/
+        display: flex;
+        justify-content: center;
+        background-color:  rgb(5, 3, 0);
+        color: aliceblue;
+
+    }
+
+   #padre{
+    
+        display: grid;
+        grid-template-areas:  "header header"
+                              "menu menu"
+                              "asideizquierdo asidederecho"
+                              "productos productos"
+                              "footer footer";
+        grid-template-rows: auto auto; /* FILAS 1° Header 2°AsideIzquierod 3°Section 4°footer*/
+        grid-template-columns: auto auto; /* COLUMNAS */
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    .footerestiloinicio{
+        background-color: rgb(209, 224, 7);
+        border-radius: 30px;     
+        font-size: 200%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%; 
+     
+    }
+
+}
+
+
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+
+
+/* Tablets: */
+/* Tablets: */
+/* Tablets: */
+/* Tablets: */
+@media only screen and (min-width: 426px){
+    body{
+        background-color: rgb(37, 221, 0);
+    }
+
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+
+
+/*  Escritorio: */
+/*  Escritorio: */
+/*  Escritorio: */
+/*  Escritorio: */
+@media only screen and (min-width: 769px) {
+    body{
+        background-color: rgb(231, 0, 212);
+    }
+
+     /* Estilo de texto de los botones*/
+.btn1, .btn2, .btn3, .btn4, .btn5, .btn6{
+    font-size: 150%;
+    font-weight: bold;
+    width: 10%;
+    height: 80%;
+    border-radius: 30px;
+    line-height: 250%;
+    text-align: center;
+    vertical-align: middle;
+    background-color:  rgb(255, 153, 0);
+    color: aliceblue;
+
+}
+
+/* Estilo Padre de los Botones*/
+#botones{
+    display: flex;   
+    justify-content:space-between;  
+    background-color: rgba(7, 224, 224, 0.534);
+    border-radius: 30px;  
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;  
+    padding-left: 5%;
+    padding-right: 5%;
+    }
+
+    #padre{
+    
+        display: grid;
+        grid-template-areas:  "header header header"
+                              "menu menu menu"            
+                              "asideizquierdo productos asidederecho"
+                              "footer footer footer";
+        grid-template-rows: auto auto auto auto; /* FILAS 1° Header 2°AsideIzquierod 3°Section 4°footer*/
+        grid-template-columns: 20% auto 20%; /* COLUMNAS */
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+     }
+
+}
